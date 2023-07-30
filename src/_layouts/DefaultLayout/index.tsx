@@ -13,7 +13,7 @@ export function DefaultLayout() {
 
       <Outlet />
 
-      <Flex className="container">
+      <Flex padding={0} margin={0} className="container">
         <Foooter />
       </Flex>
     </LayoutContainer>

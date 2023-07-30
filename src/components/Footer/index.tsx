@@ -21,7 +21,6 @@ export function Foooter() {
       <Card
         align="center"
         flex
-        padding
         gap
         justify="between"
         css={{ backgroundColor: '#fcd34d' }}
