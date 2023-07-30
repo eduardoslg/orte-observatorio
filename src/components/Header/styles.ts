@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 interface HeaderButtonProps {
-  variant: 'purple' | 'yellow'
+  variant: 'purple' | 'yellow' | 'amber200' | 'amber300'
 }
 
 export const HeaderContainer = styled.header`

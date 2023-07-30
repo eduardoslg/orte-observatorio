@@ -15,7 +15,7 @@ export function Header() {
         </NavLink>
 
         <HeaderButtonsContainer>
-          <HeaderButton variant="purple">
+          <HeaderButton variant="amber300">
             <MapPin size={20} weight="fill" />
             Olimpia, SP
           </HeaderButton>

@@ -7,10 +7,12 @@ export const Container = styled(Flex)`
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   justify-content: center;
+  align-items: center;
 
   cursor: pointer;
 
   &:hover {
-    /* background-color: #6b7280; */
+    transition: background-color 1s ease;
+    background-color: #fde68a;
   }
 `
