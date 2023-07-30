@@ -4,6 +4,7 @@ import { Separator } from '@siakit/separator'
 import { Text } from '@siakit/text'
 
 import LOGO from '../../assets/logo-grande.webp'
+import { Foooter } from '../../components/Footer'
 
 export function History() {
   return (
@@ -63,6 +64,8 @@ export function History() {
           </Text>
         </Flex>
       </Card>
+
+      <Foooter />
     </Flex>
   )
 }

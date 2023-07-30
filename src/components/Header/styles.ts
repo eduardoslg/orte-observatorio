@@ -5,8 +5,7 @@ interface HeaderButtonProps {
 }
 
 export const HeaderContainer = styled.header`
-  width: 100%;
-  height: 4.5rem;
+  height: 5rem;
   background: ${({ theme }) => theme.colors['base-background']};
   display: flex;
   align-items: center;
