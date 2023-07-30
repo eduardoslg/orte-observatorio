@@ -8,10 +8,12 @@ import { LayoutContainer } from './styles'
 
 export function DefaultLayout() {
   return (
-    <LayoutContainer>
-      <Header />
+    <>
+      <LayoutContainer>
+        <Header />
 
-      <Outlet />
+        <Outlet />
+      </LayoutContainer>
 
       <Flex
         width="100%"
@@ -21,6 +23,6 @@ export function DefaultLayout() {
       >
         <Foooter />
       </Flex>
-    </LayoutContainer>
+    </>
   )
 }
