@@ -22,7 +22,13 @@ export function Foooter() {
       flex
       gap
       justify="between"
-      css={{ backgroundColor: '#fcd34d' }}
+      css={{
+        backgroundColor: '#fcd34d',
+        width: '100%',
+        maxWidth: '70rem',
+        margin: 'auto',
+        padding: 'auto',
+      }}
     >
       <Flex padding>
         <Link to="https://www.instagram.com/rbot.rede" target="_blank">
