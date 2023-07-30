@@ -25,9 +25,8 @@ export const defaultTheme = {
     'brand-orange-300-light': '#fdba74',
     'brand-amber300-light': '#fcd34d',
     'brand-amber200-light': '#fde68a',
-    'brand-amber200-dark': '#451a03',
+    'brand-amber200-dark': '#fde68a',
     'brand-amber300-dark': '#451a03',
-    'brand-blue-300-light': '#93c5fd',
     'orange-300': '#fdba74',
   },
   textSizes: {
