@@ -17,7 +17,7 @@ import LOGOREDE from '../../assets/logo-rede.webp'
 
 export function Foooter() {
   return (
-    <Flex flex>
+    <Flex className="container">
       <Card
         align="center"
         flex

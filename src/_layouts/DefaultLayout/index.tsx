@@ -13,16 +13,9 @@ export function DefaultLayout() {
         <Header />
 
         <Outlet />
-      </LayoutContainer>
 
-      <Flex
-        width="100%"
-        maxWidth="1100px"
-        padding="0px 12px 0px"
-        css={{ marginLeft: '$auto', marginRight: 'auto' }}
-      >
         <Foooter />
-      </Flex>
+      </LayoutContainer>
     </>
   )
 }
