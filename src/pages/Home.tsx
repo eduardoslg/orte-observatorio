@@ -1,15 +1,11 @@
-import { useNavigate } from 'react-router-dom'
-
 import { Card } from '@siakit/card'
 import { Flex } from '@siakit/layout'
 import { Text } from '@siakit/text'
 
 import LOGO from '../../src/assets/orte.webp'
 import { Carousel } from '../components/Carousel'
-import { Container } from './styles'
 
 export function Home() {
-  const navigate = useNavigate()
   return (
     <Flex
       padding="16px 0px"
@@ -19,20 +15,6 @@ export function Home() {
       gap
       flexWrap="wrap"
     >
-      <Flex flex gap={8}>
-        <Container flex>Home</Container>
-
-        <Container flex onClick={() => navigate('/about')}>
-          História
-        </Container>
-
-        <Container flex>Quem somos</Container>
-
-        <Container flex>Boletins</Container>
-
-        <Container flex>Contato</Container>
-      </Flex>
-
       <Flex flex direction="column" gap flexWrap="wrap">
         <Carousel />
 

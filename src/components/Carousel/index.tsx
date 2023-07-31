@@ -1,17 +1,19 @@
+import { Link } from 'react-router-dom'
+
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css'
-import { Button } from '@siakit/button'
 import { Card } from '@siakit/card'
 import { Flex } from '@siakit/layout'
-import { Text } from '@siakit/text'
 
 import IFEDERAL from '../../assets/instituto-federal.webp'
 import LINHATEMPO from '../../assets/linha-do-tempo.jpg'
 import LOGO from '../../assets/logo-rede.webp'
+import { Button as Btn } from '../Button'
+import { ButtonAnimation, RBOTText } from './styles'
 
 export function Carousel() {
   return (
-    <CCarousel controls>
+    <CCarousel controls interval={3000} transition="crossfade" dark>
       <CCarouselItem>
         <Card
           flex
@@ -22,20 +24,30 @@ export function Carousel() {
               'linear-gradient(90deg, rgba(223,215,196,1) 0%, rgba(250,215,240,1) 100%)',
           }}
         >
-          <Flex justify="around" align="center" padding flex gap>
+          <Flex justify="around" align="center" padding={130} flex gap>
             <Flex direction="column">
-              <Text size="9xl" css={{ fontWeight: '$bold', color: '$red11' }}>
-                RBOT
-              </Text>
+              <RBOTText size="9xl">RBOT</RBOTText>
 
-              <Text size="2xl">
+              <RBOTText size="2xl" css={{ color: '#574F4D' }}>
                 Rede Brasileira de Observatórios de Turismo
-              </Text>
+              </RBOTText>
 
               <Flex padding="16px 0px">
-                <Button size="lg" colorScheme="red">
-                  Conheça
-                </Button>
+                <Link
+                  to="https://www.instagram.com/rbot.rede/"
+                  target="_blank"
+                  style={{ color: '#fff' }}
+                >
+                  <Btn
+                    size="lg"
+                    colorScheme="red"
+                    css={{
+                      padding: '0px 50px',
+                    }}
+                  >
+                    Conheça
+                  </Btn>
+                </Link>
               </Flex>
             </Flex>
 
@@ -62,9 +74,35 @@ export function Carousel() {
             </Flex>
 
             <Flex padding="16px 0px" flex gap={150}>
-              <Button colorScheme="green">Campus Barretos</Button>
+              <Link
+                to="https://brt.ifsp.edu.br/"
+                target="_blank"
+                style={{ color: '#fff' }}
+              >
+                <ButtonAnimation
+                  colorScheme="green"
+                  css={{
+                    padding: '6px 50px',
+                  }}
+                >
+                  Campus Barretos
+                </ButtonAnimation>
+              </Link>
 
-              <Button colorScheme="green">Campus São José do Rio Preto</Button>
+              <Link
+                to="https://sjp.ifsp.edu.br/"
+                target="_blank"
+                style={{ color: '#fff' }}
+              >
+                <ButtonAnimation
+                  colorScheme="green"
+                  css={{
+                    padding: '6px 35px',
+                  }}
+                >
+                  Campus São José do Rio Preto
+                </ButtonAnimation>
+              </Link>
             </Flex>
           </Flex>
         </Card>
@@ -74,19 +112,18 @@ export function Carousel() {
         <Card height={400} css={{ backgroundColor: '$amber1' }}>
           <Flex flex>
             <Flex flex>
-              <Text
-                size="5xl"
+              <RBOTText
+                size="6xl"
                 css={{
-                  fontWeight: '$bold',
                   position: 'absolute',
                   top: '100px',
-                  left: '35%',
+                  left: '30%',
                   marginLeft: '-50px',
                   color: '$red10',
                 }}
               >
                 LINHA DO TEMPO / RBOT
-              </Text>
+              </RBOTText>
 
               <CImage
                 className="d-block w-100"
@@ -94,17 +131,24 @@ export function Carousel() {
                 alt="slide 1"
               />
 
-              <Button
-                colorScheme="red"
-                css={{
-                  position: 'absolute',
-                  left: '50%',
-                  marginLeft: '-50px',
-                  bottom: '40px',
-                }}
+              <Link
+                to="https://www.orteobservatorio.com.br/_files/ugd/f5d2a3_457cd624315149bb98c86d133eaa4728.pdf"
+                target="_blank"
+                style={{ color: '#fff' }}
               >
-                CONFIRA
-              </Button>
+                <Btn
+                  colorScheme="red"
+                  css={{
+                    position: 'absolute',
+                    left: '45%',
+                    marginLeft: '-50px',
+                    bottom: '40px',
+                    padding: '6px 50px',
+                  }}
+                >
+                  CONFIRA
+                </Btn>
+              </Link>
             </Flex>
           </Flex>
         </Card>

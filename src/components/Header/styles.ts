@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 
+import { Flex } from '@siakit/layout'
+
 interface HeaderButtonProps {
   variant: 'purple' | 'yellow' | 'amber200' | 'amber300'
 }
@@ -87,4 +89,19 @@ export const Logo = styled.div`
   align-items: center;
   justify-content: center;
   font-size: ${({ theme }) => theme.textSizes['text-bold-s']};
+`
+
+export const Container = styled(Flex)`
+  padding: 10px 0px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  &:hover {
+    transition: background-color 1s ease;
+    background-color: #fde68a;
+  }
 `
