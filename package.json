@@ -12,6 +12,8 @@
   "dependencies": {
     "@coreui/coreui": "^5.0.0-alpha.1",
     "@coreui/react": "^5.0.0-alpha.0",
+    "@eduardoslg/button": "^1.0.0",
+    "@eduardoslg/core": "^1.0.0",
     "@siakit/button": "^0.0.8",
     "@siakit/card": "^0.0.7",
     "@siakit/core": "^0.0.20",

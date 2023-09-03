@@ -9,15 +9,15 @@ import IFEDERAL from '../../assets/instituto-federal.webp'
 import LINHATEMPO from '../../assets/linha-do-tempo.jpg'
 import LOGO from '../../assets/logo-rede.webp'
 import { Button as Btn } from '../Button'
-import { ButtonAnimation, RBOTText } from './styles'
+import { ButtonAnimation, FlexAnimated, RBOTText } from './styles'
 
 export function Carousel() {
   return (
-    <CCarousel controls interval={3000} transition="crossfade" dark>
+    <CCarousel controls interval={2800} transition="crossfade" dark>
       <CCarouselItem>
         <Card
           flex
-          height={400}
+          height={350}
           padding
           css={{
             background:
@@ -61,7 +61,7 @@ export function Carousel() {
       <CCarouselItem>
         <Card
           flex
-          height={400}
+          height={350}
           padding
           css={{
             background:
@@ -69,9 +69,9 @@ export function Carousel() {
           }}
         >
           <Flex flex justify="center" align="center" direction="column">
-            <Flex flex padding="30px 0px">
+            <FlexAnimated flex padding="30px 0px">
               <CImage className="d-block w-100" src={IFEDERAL} alt="slide 1" />
-            </Flex>
+            </FlexAnimated>
 
             <Flex padding="16px 0px" flex gap={150}>
               <Link
@@ -109,14 +109,14 @@ export function Carousel() {
       </CCarouselItem>
 
       <CCarouselItem>
-        <Card height={400} css={{ backgroundColor: '$amber1' }}>
+        <Card height={350} css={{ backgroundColor: '$amber1' }}>
           <Flex flex>
             <Flex flex>
               <RBOTText
                 size="6xl"
                 css={{
                   position: 'absolute',
-                  top: '100px',
+                  top: '65px',
                   left: '30%',
                   marginLeft: '-50px',
                   color: '$red10',
@@ -142,7 +142,7 @@ export function Carousel() {
                     position: 'absolute',
                     left: '45%',
                     marginLeft: '-50px',
-                    bottom: '40px',
+                    bottom: '35px',
                     padding: '6px 50px',
                   }}
                 >

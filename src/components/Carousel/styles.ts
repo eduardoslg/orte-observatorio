@@ -1,5 +1,6 @@
 import { Button } from '@siakit/button'
 import { keyframes, styled } from '@siakit/core'
+import { Flex } from '@siakit/layout'
 import { Text } from '@siakit/text'
 
 const scaleRight = keyframes({
@@ -34,4 +35,8 @@ export const RBOTText = styled(Text, {
 
 export const ButtonAnimation = styled(Button, {
   animation: `${scaleLeft} 2.5s ease 0s 1 normal both`,
+})
+
+export const FlexAnimated = styled(Flex, {
+  animation: `${scaleRight} 2.5s ease 0s 1 normal both`,
 })

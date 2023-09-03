@@ -6,7 +6,9 @@ export function WhoWeAre() {
   return (
     <Flex className="container" padding="16px 0px">
       <Card flex padding>
-        <Text>Página sobre nós</Text>
+        <Text size="6xl" css={{ fontWeight: '$bold' }}>
+          Quem somos?
+        </Text>
       </Card>
     </Flex>
   )
